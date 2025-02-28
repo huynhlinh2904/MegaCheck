@@ -120,6 +120,12 @@ body {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     color: white; /* Đổi màu chữ khi hover */
 }
+.feature-item:hover h5{
+    transform: scale(1.05);
+    
+    background: linear-gradient(to bottom right, color(white), color(white));
+    color: white; /* Đổi màu chữ khi hover */
+}
 
 /* Màu sắc tiêu đề */
 h3 {
@@ -153,6 +159,7 @@ h3 {
     height: 100%;
     /* Đảm bảo tất cả các thẻ có chiều cao bằng nhau */
 }
+
 
 .m-0 {
     text-align: left;
