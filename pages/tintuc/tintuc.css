@@ -8,7 +8,7 @@ License: https://www.wowthemes.net/freebies-license/
 	padding:1rem 0rem;
 }
 a {
-	color:#00ab6b;
+	color:var(--primary);
 }
 a,a:hover {
 	transition:all 0.2s;
@@ -480,6 +480,7 @@ figcaption {
 
 /* Tablet (Màn hình nhỏ hơn 992px) */
 @media (max-width: 991.98px) {
+	
     .hero-header-gen {
         padding: 10rem 0 6rem 0; /* Giảm khoảng cách để phù hợp với tablet */
         background-size: contain; /* Điều chỉnh kích thước ảnh nền */
@@ -514,6 +515,10 @@ figcaption {
 
 /* Mobile nhỏ (Màn hình nhỏ hơn 576px) */
 @media (max-width: 576px) {
+	ul.tags li{
+		padding: 5px;
+	}
+	
     .hero-header-gen {
         padding: 6rem 0 3rem 0; /* Giảm khoảng cách header */
     }
@@ -538,7 +543,6 @@ figcaption {
 	border-radius: 1px !important;
 	padding: 2% !important;
 }
-
 
   
   
