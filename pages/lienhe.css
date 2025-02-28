@@ -1,0 +1,32 @@
+.hero-header-vu {
+    padding: 8rem 0 0 0;
+    background:
+        /* url(../img/bg-circle.png),
+        url(../img/bg-triangle.png),
+        url(../img/bg-bottom.png), */
+        linear-gradient(to bottom right, var(--primary), var(--secondary));
+        background-position:
+        left 0px top 0px,
+        right 0px top 50%,
+        center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Mobile nhỏ (Màn hình nhỏ hơn 576px) */
+@media (max-width: 576px) {
+    .hero-header-gen {
+        padding: 6rem 0 3rem 0; /* Giảm khoảng cách header */
+    }
+    .navbar-brand img {
+        width: 140px; /* Thu nhỏ logo */
+    }
+    .navbar-toggler {
+        font-size: 1.5rem; /* Tăng kích thước nút menu */
+    }
+    .hero-header-vu {
+		padding: 0;
+        background: #4294E3;
+		border: none;
+    }
+    
+}

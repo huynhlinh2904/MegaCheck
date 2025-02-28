@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MEGACHECK</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="./img/logo/logo_kochu.svg" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="./css/style.css" rel="stylesheet">
+    <style>
+        @media (max-width: 479px) {
+            .anhbia {
+                width: 90%;
+            }
+        }
+    </style>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0" id="home">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <!-- <h1 class="m-0">MEGACHECK</h1> -->
+                    <img src="./img/logo/logo_trang.png" alt="Logo" id="header-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="./index.html" class="nav-item nav-link active">Trang chủ</a>
+                        <a href="./pages/vechungtoi/vechungtoi.html" class="nav-item nav-link">Giới thiệu</a>
+                        <a href="./pages/dichvu/dichvu.html" class="nav-item nav-link">Dịch vụ</a>
+                        <a href="./pages/doitac/doitac.html" class="nav-item nav-link">Đối tác</a>
+                        <a href="./pages/tintuc/tintuc.html" class="nav-item nav-link">Tin tức</a>
+                    </div>
+                    <a href="./pages/lienhe.html" target="_blank"
+                        class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3  d-lg-block">Liên hệ</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <p></p>
+                            <h1 class="text-white mb-4 animated slideInDown">MEGACHECK</h1>
+                            <h4 class="text-white pd-3 mb-4 animated slideInDown">Giải pháp QR CODE xác thực uy tín nhất
+                            </h4>
+                            <p class="text-white pb-3 animated slideInDown">Căn cứ Quyết định 645/QĐ-TTg ngày 15/5/2020 của Thủ
+                                tướng Chính phủ phê duyệt kế hoạch tổng thể Phát triển thương mại điện tử quốc gia giai đoạn 2021 - 2025 với một trong
+                                những nhiệm vụ trọng tâm là xây dựng và hỗ trợ doanh nghiệp áp dụng các giải pháp công nghệ số (công nghệ mã vạch, mã
+                                QRcode) để xác thực sản phẩm là hàng chính hãng, xây dựng thương hiệu trực tuyến và tiếp thị trên môi trường điện tử.</p>
+                            <!-- <p class="text-white pb-3 animated slideInDown">Giải pháp QRCODE Blockchain toàn diện và
+                                được xác thực bởi cổng thông tin truy xuất nguồn gốc sản phẩm, hàng hóa quốc gia</p> -->
+                            <div class="d-flex">
+                                <a href="./pages/vechungtoi/vechungtoi.html" target="_blank"
+                                class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Xem
+                                thêm</a>
+                            <a target="_blank" href="./pages/lienhe.html"
+                                class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Liên
+                                hệ</a>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <img src="./img/home/1.png" alt="anhbia" class="anhbia">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h2 class="text-primary-gradient fw-medium">Về chúng tôi</h2>
+                        <h1 class="mb-4">MEGACHECK</h1>
+                        <p class="mb-4">Giải pháp tích hợp tra cứu, truy xuất và xác thực hàng hóa, quản lý, góp phần
+                            nâng cao hiệu quả quản lý doanh nghiệp và phù hợp với các yêu cầu của cơ quan quản lý nhà
+                            nước trong hoạt động thương mại điện tử, nâng cao uy tín thương hiệu và giá trị hàng hóa cho
+                            doanh nghiệp.</p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                    <div class="ms-3">
+                                        <h2 class="mb-0" data-toggle="counter-up">3000</h2>
+                                        <p class="text-primary-gradient mb-0">Loại sản phẩm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="./pages/vechungtoi/vechungtoi.html" target="_blank"
+                            class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Xem thêm</a>
+                    </div>
+                    <div class="col-lg-6 feature-item rounded p-4 h-100 d-flex flex-column text-center">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="./img/home/2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container">
+                <div class="text-center wow fadeInUp mb-5" data-wow-delay="0.1s">
+                    <h2 class="text-primary-gradient fw-medium text-uppercase">Giải pháp</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5 animated slideInLeft">
+                        <object stype="image/svg+xml" data="../../img/serviecs/dichvu2.svg" id="svgObject"></object>
+                    </div>
+                    <div class="col-lg-7 animated slideInRight d-flex justify-content-center align-items-center">
+                        <div class="tab1">
+                            <div class="rounded p-4 shadow-lg">
+                                <h5 class="mb-3 text-primary-gradient">Mã truy xuất nguồn gốc</h5>
+                                <ul class="m-0 pb-4">
+                                    <li class="p-1">
+                                        Mã truy xuất nguồn gốc là một mã định danh (thường là mã số, mã vạch, QR
+                                        code, RFID, v.v.) gán cho một sản phẩm hoặc lô sản phẩm nhằm theo dõi và xác
+                                        minh nguồn
+                                        gốc, quá trình sản xuất, phân phối và tiêu thụ của sản phẩm đó.
+                                    </li>
+                                </ul>
+                                <a href="./pages/dichvu/matruyxuat.html"
+                                    class="btn btn-primary-gradient py-sm-3 px-4 rounded-pill me-3 animated slideInLeft right">Xem
+                                    thêm</a>
+                            </div>
+                        </div>
+                        <div class="tab2">
+                            <div class="rounded p-4 shadow-lg">
+                                <h5 class="mb-3 text-primary-gradient">Hệ thống truy xuất nguồn gốc</h5>
+                                <ul class="m-0">
+                                    <li class="p-1">
+                                        Hệ thống truy xuất nguồn gốc là một hệ thống quản lý dữ liệu giúp theo dõi toàn
+                                        bộ
+                                        quá
+                                        trình sản xuất, phân phối và tiêu thụ sản phẩm bằng cách sử dụng mã truy xuất
+                                        nguồn
+                                        gốc (mã QR, mã vạch, RFID, v.v.).
+                                    </li>
+
+                                    <li class="p-1">
+                                        Hệ thống này giúp doanh nghiệp và người tiêu dùng kiểm tra nguồn gốc sản phẩm,
+                                        đảm
+                                        bảo
+                                        chất lượng, minh bạch và an toàn trong chuỗi cung ứng.
+                                    </li>
+                                </ul>
+
+                                <a href="./pages/dichvu/hethongtruyxuat.html"
+                                    class="btn btn-primary-gradient py-sm-3 px-4 rounded-pill me-3 animated slideInLeft right">Xem
+                                    thêm</a>
+
+                            </div>
+                        </div>
+                        <div class="tab3">
+                            <div class="rounded p-4 shadow-lg">
+                                <h5 class="mb-3 text-primary-gradient">Dịch vụ vận hành và truy xuất nguồn gốc</h5>
+                                <ul class="m-0">
+                                    <li class="p-1">
+                                        Dịch vụ vận hành và truy xuất nguồn gốc là một giải pháp hỗ trợ doanh nghiệp
+                                        trong quản lý, theo dõi và xác minh nguồn gốc sản phẩm từ sản xuất đến tiêu thụ.
+                                        Dịch vụ
+                                        này giúp đảm bảo tính minh bạch, chống hàng giả và nâng cao uy tín thương hiệu.
+                                    </li>
+                                </ul>
+
+                                <a href="./pages/dichvu/dichvuvanhanh.html"
+                                    class="btn btn-primary-gradient py-sm-3 px-4 rounded-pill me-3 animated slideInLeft right">Xem
+                                    thêm</a>
+
+                            </div>
+                        </div>
+                        <div class="tab4">
+                            <div class="rounded p-4 shadow-lg">
+                                <h5 class="mb-3 text-primary-gradient">Cấp chứng chỉ chứng thực sản phẩm(API)</h5>
+                                <ul class="m-0">
+                                    <li class="p-1">
+                                        Hệ thống cấp chứng chỉ chứng thực sản phẩm qua API là một giải pháp giúp
+                                        doanh nghiệp tự động hóa quá trình xác thực nguồn gốc và chất lượng sản phẩm
+                                        bằng cách
+                                        sử dụng giao diện lập trình ứng dụng (API). Hệ thống này cho phép kết nối dữ
+                                        liệu giữa
+                                        doanh nghiệp, cơ quan kiểm định và người tiêu dùng.
+                                    </li>
+                                </ul>
+
+                                <a href="./pages/dichvu/capchungchiAPI.html"
+                                    class="btn btn-primary-gradient py-sm-3 px-4 rounded-pill me-3 animated slideInLeft right">Xem
+                                    thêm</a>
+
+                            </div>
+                        </div>
+                        <div class="tab5">
+                            <div class="rounded p-4 shadow-lg">
+                                <h5 class="mb-3 text-primary-gradient">Tư vấn giải pháp ERP</h5>
+                                <ul class="m-0">
+                                    <li class="p-1">Giải pháp quản trị tổng thể doanh nghiệp</li>
+                                    <li class="p-1">Quản lý kho</li>
+                                    <li class="p-1">Hệ thống đại lý</li>
+                                    <li class="p-1">Dịch vụ khách hàng</li>
+                                    <li class="p-1">Quản lý mã QRCODE</li>
+                                </ul>
+
+                                <a href="./pages/dichvu/erp.html"
+                                    class="btn btn-primary-gradient py-sm-3 px-4 rounded-pill me-3 animated slideInLeft right">Xem
+                                    thêm</a>
+
+                            </div>
+                        </div>
+                        <div class="tab6">
+                            <div class="rounded p-4 shadow-lg">
+                                <h5 class="mb-3 text-primary-gradient">Dịch vụ khác</h5>
+                                <ul class="m-0">
+                                    <li class="p-1">Hóa đơn điện tử</li>
+                                    <li class="p-1">Chữ kí số</li>
+                                    <li class="p-1">Môi trường dữ liệu chung MegaCDE, MegaBim (CDE áp dụng BIM)</li>
+                                    <li class="p-1">Ứng dụng camera AI</li>
+                                    <li class="p-1">Dịch vụ số hóa hồ sơ tài liệu, công trình</li>
+                                    <li class="p-1">Phần mềm quản lí văn thư lưu trữ</li>
+                                    <li class="p-1">Phần mềm quản lí tòa nhà</li>
+                                    <li class="p-1">Phần mềm quản lí công việc</li>
+                                    <li class="p-1">Dịch vụ tư vấn chuyển đổi số doanh nghiệp</li>
+                                </ul>
+
+                                <a href="./pages/dichvu/dichvukhac.html"
+                                    class="btn btn-primary-gradient py-sm-3 px-4 rounded-pill me-3 animated slideInLeft right">Xem
+                                    thêm</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <!-- Screenshot Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                        <a href="./pages/doitac/doitac.html">
+                            <h2 class="text-primary-gradient fw-medium">Đối tác</h2>
+                        </a>
+                        <h1 class="mb-4">Các đơn vị đồng hành</h1>
+                        <p class="mb-4">Giải pháp tích hợp tra cứu, truy xuất và xác thực hàng hóa, quản lý, góp phần
+                            nâng cao hiệu quả quản lý doanh nghiệp và phù hợp với các yêu cầu của cơ quan quản lý nhà
+                            nước trong hoạt động thương mại điện tử, nâng cao uy tín thương hiệu và giá trị hàng hóa cho
+                            doanh nghiệp.</p>
+
+                        <a href="./pages/doitac/doitac.html" target="_blank"
+                            class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Xem thêm</a>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+                        data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="img/doi-tac-megacheck.jpg" alt="doitac">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Screenshot End -->
+
+
+        <!-- Process Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="./pages/tintuc/tintuc.html" target="_blank">
+                        <h2 class="text-primary-gradient fw-medium">Tin tức nổi bật</h2>
+                    </a>
+                    <!-- <h1 class="mb-5">3 Easy Steps</h1> -->
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <a href="./pages/tintuc/chitiettintuc-megalive-1.html" target="_blank">
+                                <img src="./img/demopic/megalive-1.jpeg" alt="Image" class="img-fluid" style="border-radius: 2px;">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <a href="./pages/tintuc/chitiettintuc-megalive-1.html" target="_blank">Livestream
+                                        bán hàng 12 tiếng đồng hồ, lấy toàn bộ lợi nhuận tặng vé xe cho công nhân về quê
+                                        đón Tết</a>
+                                </h3>
+                                <p class="card-text">Phiên mega livestream kéo dài 12 tiếng đồng hồ do Thành Đoàn TP.HCM
+                                    tổ chức, được dẫn dắt bởi các hot TikToker, nghệ sĩ… đang diễn ra đến 0h tối nay.
+                                    Toàn bộ lợi nhuận sẽ được sử dụng để tặng vé xe cho công nhân về quê đón Tết bên gia
+                                    đình.</p>
+                                <div class="metafooter">
+                                    <div class="wrapfooter w-auto">
+                                        <i class="fa fa-calendar"></i>
+                                        <span class="date">Chủ nhật, 09/02/2025</span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <a href="./pages/tintuc/chitiettintuc-megalive-2.html" target="_blank">
+                                <img src="./img/demopic/megalive-content-6.jpg" alt="Image" class="img-fluid" style="border-radius: 2px;">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <a href="./pages/tintuc/chitiettintuc-megalive-2.html" target="_blank">Livestream
+                                        bán hàng, tặng vé xe cho 2.000 công nhân về quê đón tết</a>
+                                </h3>
+                                <p class="card-text">TP.HCM Chương trình 'Tết đong đầy - Sum vầy tình thân' của Thành
+                                    Đoàn TP.HCM hỗ trợ 2.000 công nhân có hoàn cảnh khó khăn về quê đón Tết sum họp với
+                                    gia đình.</p>
+                                <div class="metafooter">
+                                    <div class="wrapfooter w-auto">
+                                        <i class="fa fa-calendar"></i>
+                                        <span class="date">Chủ nhật, 09/02/2025</span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <a href="./pages/tintuc/chitiettintuc-megalive-3.html" target="_blank">
+                                <img src="./img/demopic/megalive-baiviet3-1.webp" alt="Image" class="img-fluid" style="border-radius: 2px;">
+                            </a>
+
+                            <div class="card-body">
+                                <h3 class="card-title">
+                                    <a href="./pages/tintuc/chitiettintuc-megalive-3.html" target="_blank">Livestream 12
+                                        tiếng góp quỹ đưa công nhân, người lao động về quê ăn tết</a>
+                                </h3>
+                                <p class="card-text">Thành Đoàn TP.HCM chung tay với nhiều nghệ sĩ, diễn viên, nhà sáng
+                                    tạo nội dung nổi tiếng để mang đến cho thanh niên công nhân một mùa tết ấm áp, ý
+                                    nghĩa.</p>
+                                <div class="metafooter">
+                                    <div class="wrapfooter w-auto">
+                                        <i class="fa fa-calendar"></i>
+                                        <span class="date">Chủ nhật, 09/02/2025</span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Start -->
+
+
+
+
+
+
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="lienhe">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h2 class="text-primary-gradient fw-medium">Liên hệ</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-center mb-4"><a>Nhập biểu mẫu liên hệ với chúng tôi để được hỗ trợ tư vấn
+                                    nhanh nhất</a>.</p>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Họ và tên</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email"
+                                                placeholder="Your Email">
+                                            <label for="email">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Số điện thoại</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here"
+                                                id="message" style="height: 150px"></textarea>
+                                            <label for="message">Nội dung</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5"
+                                            type="submit">Gửi liên hệ</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer">
+            <div class="floatingButtonWrap">
+                <div class="floatingButtonInner">
+                    <a href="#" class="floatingButton">
+                        <img src="./img/support-icon.png" alt="" style="width: 50px; height: 50px;">
+                    </a>
+                    <ul class="floatingMenu">
+                        <li>
+                            <a href="#">
+                                <img src="./img/zalo.png" alt="" style="border-radius: 50%;width: 50px; height: 50px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="./img/facebook.png" alt="" style="width: 50px; height: 50px;"></a>
+                        </li>
+                        <li>
+                            <a href="tel:0933712097"><img src="./img/hotline.webp" alt=""
+                                    style="width: 50px; height: 50px;"></a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="container py-5 px-lg-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-3">Địa chỉ</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-2"></i> 32 Hoàng Hoa Thám, P.12, Q.Tân Bình, TP.HCM</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-2"></i> +84 933 712 097</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-2"></i> +84 392 074 077</p>
+                        <p><i class="fa fa-envelope me-2"></i> megacde.vn@gmail.com</p>
+                        <div class="col-lg-1"></div> 
+                        <h4 class="text-white mt-3">Đăng ký kinh doanh</h4>
+                        <p class="mb-1">Công Ty Cổ Phần Giải Pháp BVC VIỆT NAM. MST: 0318776891</p>
+                        <p>Cấp ngày: 11/12/2024</p>
+                    </div>
+                    <div class="col-lg-1"></div> 
+            
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-3">Truy cập nhanh</h4>
+                        <a class="btn btn-link mb-2" href="./pages/vechungtoi/vechungtoi.html" target="_blank">Về chúng tôi</a>
+                        <a class="btn btn-link mb-2" href="./pages/lienhe.html" target="_blank">Liên hệ</a>
+            
+                        <h4 class="text-white mt-4 mb-3">Hỗ trợ kỹ thuật</h4>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-2"></i> +84 869 187 939</p>
+                        <p><i class="fa fa-envelope me-2"></i> megacheck.vn@gmail.com</p>
+                    </div>
+                    <div class="col-lg-1"></div> 
+            
+                    <div class="col-md-6 col-lg-3 text-center">
+                        <img src="./img/fotter/echeck1.svg" alt="Logo Footer" class="card img-fluid footer-logo mb-3 p-2">
+                        <img src="./img/fotter/ncheck.svg" alt="Logo Footer" class="card img-fluid footer-logo mb-3 p-2">
+                        <img src="./img/fotter/gcheck.svg" alt="Logo Footer" class="card img-fluid footer-logo mb-3 p-2">
+                    </div>
+                </div>
+            </div>
+            <div class="sub-footer py-3 text-center" style="background-color: linear-gradient(to bottom right, var(--primary), var(--secondary));">
+                <p class="mb-0">© 2024 MegaCheck. All Rights Reserved.</p>
+            </div>
+        </div>
+        </div>
+        <!--  -->
+    </div>
+    <!-- Footer End -->
+
+    <div class="d-flex flex-column position-fixed bottom-0 end-0 p-3">
+        <!-- Zalo Button -->
+        <!-- <a href="https://zalo.me/your-zalo-link" class="btn btn-lg btn-lg-square  pt-4" target="_blank">
+            <i class="bi bi-chat-dots text-white"></i> Zalo
+        </a> -->
+
+        <!-- Amazon Icon -->
+
+        <!-- Back to Top -->
+        <!-- <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2">
+            <i class="bi bi-arrow-up text-white"></i>
+        </a> -->
+    </div>
+
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

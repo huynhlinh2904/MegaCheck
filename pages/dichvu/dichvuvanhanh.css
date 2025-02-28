@@ -1,0 +1,104 @@
+body {
+    font-size: 16px;
+    color: #444;
+
+}
+
+/* chỉnh hình tròn dịch vụ ở đầu trang*/
+
+.circle-container {
+    position: relative;
+    width: 90vw;  /* Sử dụng phần trăm màn hình để phù hợp với điện thoại */
+    height: 90vw; /* Đảm bảo hình tròn */
+    max-width: 600px;  /* Giới hạn kích thước tối đa */
+    max-height: 600px;
+
+    margin: 5vh auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle-part {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../../img/Vận hành/Artboard 38.png') no-repeat center;
+    background-size: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Part 1: Từ 6h → 10h */
+.part-1 {
+    clip-path: polygon(50% 50%, 50% 100%, 10% 75%, 0% 50%, 10% 25%);
+}
+
+/* Part 2: Từ 10h → 2h (nửa còn lại bên trái) */
+.part-2 {
+    clip-path: polygon(50% 50%, 9% 25%, 50% 0%, 99% 19%);
+}
+
+/* Part 3: Từ 2h → 6h (nửa còn lại bên phải) */
+.part-3 {
+    clip-path: polygon(50% 50%, 95% 20%, 100% 55%, 85% 85%, 50% 100%);
+}
+
+/* Hiệu ứng hover */
+.circle-part:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* chỉnh hình tròn dịch vụ ở đầu trang*/
+
+
+
+/*chỉnh modal khi hover vào từng part của hình tròn*/
+.modal-hover {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    font-size: 14px;
+    max-width: 250px;
+    text-align: left;
+    transition: opacity 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.modal-hover h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffd700;
+}
+/*chỉnh modal khi hover vào từng part của hình tròn */
+
+/*chỉnh mô tả cho dịch vụ vận hành */
+.info-box {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.info-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*chỉnh mô tả cho dịch vụ vận hành*/

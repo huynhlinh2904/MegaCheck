@@ -1,0 +1,45 @@
+/* begin vu */
+.carousel-item img {
+    width: 100px;
+    height: auto; /* Điều chỉnh chiều cao theo ý muốn */
+    
+}
+
+.card {
+    /* Cố định chiều cao */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Giữ nội dung căn giữa hoặc trải đều */
+}
+.card-text {
+    max-height: 220px; /* Giới hạn chiều cao */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Giới hạn số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Làm nền tối để dễ nhìn hơn */
+    color: white;
+    padding: 10px;
+}
+
+/* begin vu */
+.carousel-control-prev, 
+.carousel-control-next {
+
+color: black;
+}
+
+/* Đổi màu icon sang trắng để dễ nhìn */
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    filter: invert(1); /* Chuyển icon thành trắng */
+}
