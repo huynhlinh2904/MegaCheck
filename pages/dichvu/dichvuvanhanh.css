@@ -8,7 +8,7 @@ body {
 
 .circle-container {
     position: relative;
-    width: 90vw;  /* Sử dụng phần trăm màn hình để phù hợp với điện thoại */
+    /* width: 90vw;  Sử dụng phần trăm màn hình để phù hợp với điện thoại */
     height: 90vw; /* Đảm bảo hình tròn */
     max-width: 600px;  /* Giới hạn kích thước tối đa */
     max-height: 600px;
@@ -102,3 +102,17 @@ body {
 }
 
 /*chỉnh mô tả cho dịch vụ vận hành*/
+@media screen and (max-width: 768px) {
+
+    .hero-header{
+        margin-bottom: 0;
+        padding: 0 0 0 0;
+        background: none;
+        background-repeat: no-repeat;
+    }
+    .info-box{
+        width: 100%;
+    }
+    
+   
+}

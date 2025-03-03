@@ -94,8 +94,7 @@ h6,
 .btn.btn-primary-gradient,
 .btn.btn-secondary-gradient::after {
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
-    display: block;
-
+    display: table-cell;
 }
 
 .btn.btn-secondary-gradient,

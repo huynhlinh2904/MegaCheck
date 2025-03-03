@@ -228,6 +228,9 @@
     height: auto;
     object-fit: contain;
 }
+.container-xxl.hero-header{
+    padding: 9rem 0 0;
+}
 
 
 /* Điện thoại nhỏ (320px - 479px) */
@@ -256,4 +259,14 @@
 
     }
 }
-
+@media screen and (max-width: 768px) {
+    .hero-header{
+        margin-bottom: 0;
+    padding:0;
+    background: none;
+    background-repeat: no-repeat;
+    }
+    .container-xxl.hero-header{
+        padding: 0;
+    }
+}

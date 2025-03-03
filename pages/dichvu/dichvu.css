@@ -107,9 +107,17 @@ body {
         .timeline::after {
             display: none; /* Bỏ đường timeline */
         }
+        img.img-fluid.img_vcr{
+            display: block;
+            top: 140px;
+            width: 50px;
+            height: 50px;
+            left: 7.6rem;
+        }
+        .card-custom-img{
+            width: 300px;
+        }
     }
-    
-
 }
 /*css cho di động phần Quy trình triển khai QR code*/
 
@@ -123,7 +131,6 @@ body {
 .feature-item:hover h5{
     transform: scale(1.05);
     
-    background: linear-gradient(to bottom right, color(white), color(white));
     color: white; /* Đổi màu chữ khi hover */
 }
 
@@ -159,7 +166,6 @@ h3 {
     height: 100%;
     /* Đảm bảo tất cả các thẻ có chiều cao bằng nhau */
 }
-
 
 .m-0 {
     text-align: left;
@@ -215,3 +221,46 @@ h3 {
     overflow: hidden;
     border: 5px solid #fff;
   }
+  
+.card-custom {
+    height: 600px;
+    overflow: hidden;
+    min-height: 450px;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px); /* Nhấc thẻ lên */
+    box-shadow: 0 10px 20px rgba(10, 10, 10, 0.4); /* Tăng độ đổ bóng */
+}
+
+.card-custom-img {
+    width: 320px;
+    height: 200px;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    border-color: #388cec;
+    transition: filter 0.3s ease-in-out;
+}
+
+.card-custom:hover .card-custom-img {
+    filter: brightness(90%);
+}
+
+.card-custom-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    position: absolute;
+    top: 50px;
+    left: 0.6rem;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-custom:hover .card-custom-avatar img {
+    transform: scale(1.1); /* Phóng to ảnh */
+}

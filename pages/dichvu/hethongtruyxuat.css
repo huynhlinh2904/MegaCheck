@@ -29,3 +29,12 @@ svg g:hover {
     line-height: 1.6;
 }
 /* mô tả cho hệ thống truy xuất*/
+@media screen and (max-width: 768px) {
+
+    .hero-header{
+        margin-bottom: 0;
+        padding: 0 0 0 0;
+        background: none;
+        background-repeat: no-repeat;
+    }
+}
