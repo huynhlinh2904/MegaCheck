@@ -1,0 +1,76 @@
+
+.nav-pills .nav-link {
+    background-color: #f8f9fa;
+    color: #333;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    text-align: left;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--secondary);
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+}
+
+.tab-content {
+    height: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/*startcss phần Dịch vụ khác*/
+#switchService {
+    background: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+#switchService:hover {
+    background: #0056b3;
+}
+
+.service-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột */
+    gap: 15px;
+    justify-content: center;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.service-links a {
+    text-decoration: none;
+    background: white;
+    color: #333;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-links a:hover {
+    background: #007bff;
+    color: white;
+    border-color: #007bff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*end css phần Dịch vụ khác*/

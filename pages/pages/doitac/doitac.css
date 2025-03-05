@@ -1,0 +1,128 @@
+/* begin vu */
+.carousel-item img {
+    width: 100px;
+    height: auto; /* Điều chỉnh chiều cao theo ý muốn */
+    
+}
+
+.card {
+    /* Cố định chiều cao */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Giữ nội dung căn giữa hoặc trải đều */
+}
+.card-text {
+    max-height: 220px; /* Giới hạn chiều cao */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Giới hạn số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    
+}
+.outstanding_style {
+    background-position: center;background-repeat: no-repeat;object-fit: none;background-size: cover; background-color: #5b818d;background-image: url(../../img/doitac/bg_cont_1.png);
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Làm nền tối để dễ nhìn hơn */
+    color: white;
+    padding: 10px;
+}
+
+/* begin vu */
+.carousel-control-prev, 
+.carousel-control-next {
+
+color: black;
+}
+
+/* Đổi màu icon sang trắng để dễ nhìn */
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+    filter: invert(1); /* Chuyển icon thành trắng */
+}
+
+.hero-header-vu {
+    padding: 8rem 0 0 0;
+    background:
+        /* url(../img/bg-circle.png),
+        url(../img/bg-triangle.png),
+        url(../img/bg-bottom.png), */
+        linear-gradient(to bottom right, var(--primary), var(--secondary));
+        background-position:
+        left 0px top 0px,
+        right 0px top 50%,
+        center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-header-gen {
+    padding: 8rem 0 0 0;
+    background:
+        /* url(../img/bg-circle.png),
+        url(../img/bg-triangle.png),
+        url(../img/bg-bottom.png), */
+        linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Tablet (Màn hình nhỏ hơn 992px) */
+@media (max-width: 991.98px) {
+    .hero-header-gen {
+        padding: 10rem 0 6rem 0; /* Giảm khoảng cách để phù hợp với tablet */
+        background-size: contain; /* Điều chỉnh kích thước ảnh nền */
+    }
+    .hero-header-vu {
+        background: #4294E3;
+    }
+
+}
+
+/* Mobile lớn (Màn hình nhỏ hơn 768px) */
+@media (max-width: 768px) {
+    .hero-header-gen {
+        padding: 8rem 0 4rem 0; /* Tiếp tục giảm padding */
+        background-size: 100% auto; /* Giữ tỷ lệ hình nền */
+    }
+    .hero-header-vu {
+        background: #4294E3;
+    }
+    .navbar-nav-gen {
+        text-align: center; /* Căn giữa menu */
+    }
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+    .btn-primary-gradient {
+        width: 100%; /* Nút liên hệ full width */
+        margin-top: 10px;
+    }
+    
+}
+
+/* Mobile nhỏ (Màn hình nhỏ hơn 576px) */
+@media (max-width: 576px) {
+    .hero-header-gen {
+        padding: 6rem 0 3rem 0; /* Giảm khoảng cách header */
+    }
+    .navbar-brand img {
+        width: 140px; /* Thu nhỏ logo */
+    }
+    .navbar-toggler {
+        font-size: 1.5rem; /* Tăng kích thước nút menu */
+    }
+    .hero-header-vu {
+        background: #4294E3;
+        border: 1px solid #4294E3;
+    }
+}
+img.img-fluid.rounded-start {
+    margin-top: 25%;
+}

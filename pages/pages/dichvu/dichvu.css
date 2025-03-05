@@ -1,0 +1,266 @@
+/* Định dạng tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 28px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Timeline chung */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background: linear-gradient(180deg, #007bff, #00c6ff);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Các bước */
+.step {
+    position: relative;
+    width: 45%;
+    margin-bottom: 50px;
+
+    /* transform: translateY(20px); */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.step .content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    border-left: 5px solid #007bff;
+}
+
+/* Hiệu ứng hover */
+.step .content:hover {
+    transform: scale(1.05);
+    border-left: 5px solid #00c6ff;
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    color: white; /* Đổi màu chữ khi hover */
+}
+
+/* Đổi màu chữ của h3 khi hover */
+.step .content:hover h3 {
+    color: yellow; /* Màu chữ mới cho h3 khi hover */
+}
+
+/* Bên trái */
+.step.left {
+    left: 0;
+    text-align: right;
+}
+
+.step.left .content {
+    margin-left: auto;
+}
+
+/* Bên phải */
+.step.right {
+    left: 55%;
+    text-align: left;
+}
+
+/*css cho di động phần Quy trình triển khai QR code*/
+@media screen and (max-width: 768px) {
+
+    @media screen and (max-width: 768px) {
+        .step {
+            width: 100%;
+            text-align: center; /* Căn giữa nội dung */
+            left: 0 !important;
+            margin-left: 0; /* Xóa khoảng cách dư */
+        }
+    
+        .step .content {
+            margin: 0 auto; /* Căn giữa nội dung */
+            text-align: left; /* Hoặc bạn có thể để `center` nếu muốn */
+        }
+        
+        /* Ẩn hoặc bỏ đường timeline nếu không cần */
+        .timeline::after {
+            display: none; /* Bỏ đường timeline */
+        }
+        img.img-fluid.img_vcr{
+            display: block;
+            top: 140px;
+            width: 50px;
+            height: 50px;
+            left: 7.6rem;
+        }
+        .card-custom-img{
+            width: 300px;
+        }
+    }
+}
+/*css cho di động phần Quy trình triển khai QR code*/
+
+/* Hiệu ứng hover cho các ô đặc điểm */
+.feature-item:hover {
+    transform: scale(1.05);
+    
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    color: white; /* Đổi màu chữ khi hover */
+}
+.feature-item:hover h5{
+    transform: scale(1.05);
+    
+    color: white; /* Đổi màu chữ khi hover */
+}
+
+/* Màu sắc tiêu đề */
+h3 {
+    font-size: 20px;
+    color: #007bff;
+}
+
+
+
+
+
+
+*/
+
+/* căn trái cho văn bản trong content*/
+.content {
+    text-align: left;
+}
+
+
+/*  CSS Cập Nhật (Cùng độ dài cho các thẻ) của dịch vụ*/
+/* .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+.feature-item {
+    /* display: flex; */
+    flex-direction: column;
+    height: 100%;
+    /* Đảm bảo tất cả các thẻ có chiều cao bằng nhau */
+}
+
+.m-0 {
+    text-align: left;
+}
+
+
+.tab1,
+.tab2,
+.tab3,
+.tab4,
+.tab5,
+.tab6 {
+    display: none;
+}
+
+.tab1 {
+    display: block;
+    /* Mặc định hiển thị tab1 (matruyxuat) */
+}
+
+
+/* nút megacheck */
+.title-box {
+    display: inline-block; /* Giúp khung vừa với nội dung */
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary)); /* Hiệu ứng màu giống nút */
+    color: white; /* Chữ màu trắng */
+    padding: 10px 20px; /* Khoảng cách trong khung */
+    border-radius: 50px; /* Bo tròn góc */
+    font-size: 1.5rem; /* Điều chỉnh kích thước chữ */
+    font-weight: bold;
+}
+/* nút megacheck */
+/* icon cho 4 gói dịch vụ */
+.rounded-circle {
+    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+}
+/* icon cho 4 gói dịch vụ */
+
+.testimonial-card .card-up {
+    height: 120px;
+    overflow: hidden;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+  
+  .aqua-gradient {
+    background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+  }
+  
+  .testimonial-card .avatar {
+    width: 150px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 5px solid #fff;
+  }
+  
+.card-custom {
+    height: 600px;
+    overflow: hidden;
+    min-height: 450px;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px); /* Nhấc thẻ lên */
+    box-shadow: 0 10px 20px rgba(10, 10, 10, 0.4); /* Tăng độ đổ bóng */
+}
+
+.card-custom-img {
+    width: 320px;
+    height: 200px;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    border-color: #388cec;
+    transition: filter 0.3s ease-in-out;
+}
+
+.card-custom:hover .card-custom-img {
+    filter: brightness(90%);
+}
+
+.card-custom-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    position: absolute;
+    top: 50px;
+    left: 0.6rem;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-custom:hover .card-custom-avatar img {
+    transform: scale(1.1); /* Phóng to ảnh */
+}
